@@ -23,7 +23,7 @@ const page = () => {
           paddingTop: "24px",
         }}>This site is currently under construction.</div >
       </div>
-      <Image src='/loadingRobot.svg' alt="Under Construction" width={453} height={382} style={{
+      <Image src='loadingRobot.svg' alt="Under Construction" width={453} height={382} style={{
         position: "absolute",
         bottom: "160px",
         right: "120px",
