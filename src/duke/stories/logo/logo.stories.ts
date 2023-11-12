@@ -14,7 +14,6 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    backgroundColor: { control: 'color' },
   },
 } satisfies Meta<typeof Logo>;
 
