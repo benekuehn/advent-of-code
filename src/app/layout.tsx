@@ -1,4 +1,5 @@
 import { GeistSans } from 'geist/font/sans'
+import { ReactNode } from 'react'
 
 export const metadata = {
   title: 'Next.js',
@@ -8,7 +9,7 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode
 }) {
   return (
     <html lang="en" className={GeistSans.className} style={{ backgroundColor: "var(--Midnight, #000110)" }}>
