@@ -13,6 +13,7 @@
   "dependencies": {
     "@stylexjs/nextjs-plugin": "beta",
     "@stylexjs/stylex": "beta",
+    "@stylexjs/webpack-plugin": "beta",
     "geist": "^1.1.0",
     "next": "14.0.2",
     "react": "^18",
@@ -29,12 +30,14 @@
     "@storybook/nextjs": "^7.5.3",
     "@storybook/react": "^7.5.3",
     "@storybook/testing-library": "^0.2.2",
+    "@swc/core": "^1.3.96",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
     "eslint-plugin-storybook": "^0.6.15",
+    "storybook-addon-swc": "^1.2.0",
     "typescript": "^5"
   },
   "eslintConfig": {

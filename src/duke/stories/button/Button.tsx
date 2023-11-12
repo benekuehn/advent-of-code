@@ -1,13 +1,13 @@
 import React from 'react';
 import * as stylex from '@stylexjs/stylex';
-import { colors } from '../tokens/colors.stylex';
+import { colors } from '../../tokens/colors.stylex';
 
 const styles = stylex.create({
   base: {
     fontSize: 16,
     lineHeight: 1.5,
-    backgroundColor: colors.duke,
-    color: colors.snow,
+    backgroundColor: '#000',
+    color: '#fff',
     borderStyle: 'none',
     borderRadius: 8,
     padding: '8px 12px',
