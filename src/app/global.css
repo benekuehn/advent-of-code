@@ -1,0 +1,9 @@
+:root {
+    --duke: #0007B0;
+    --space: #000110;
+    --snow: #E5E5F0;
+}
+
+html {
+    background-color: var(--space);
+}

@@ -1,6 +1,7 @@
+'use client';
+
 import stylex from '@stylexjs/stylex';
 import { colors } from '../../tokens/colors.stylex';
-
 
 const styles = stylex.create({
     wrapper: {
@@ -15,9 +16,9 @@ const styles = stylex.create({
     },
 });
 
-export const Logo = () => {
+export const Logo = ({ style }: { style: Readonly<{}> }) => {
     return (
-        <div className={stylex(styles.wrapper)}>
+        <div className={stylex(styles.wrapper, style)}>
             <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M38 46.5L19 0L0 46.5H15.4285V56H23.592V46.5H38Z" fill="#0007B0" />
             </svg>
