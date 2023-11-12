@@ -3,6 +3,7 @@
 import { Logo } from "@/duke/stories/logo";
 import { ReactNode } from "react"
 import { create } from '@stylexjs/stylex';
+import { Navigation } from "../navigation";
 
 const styles = create({
     logo: {
@@ -18,6 +19,7 @@ export const GlobalWrapper = ({ children }: { children: ReactNode }) => {
         <>
             <div>
                 <Logo style={styles.logo} />
+                <Navigation />
                 {children}
             </div>
         </>
