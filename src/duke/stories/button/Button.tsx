@@ -6,8 +6,8 @@ const styles = stylex.create({
   base: {
     fontSize: 16,
     lineHeight: 1.5,
-    backgroundColor: '#000',
-    color: '#fff',
+    backgroundColor: colors.duke,
+    color: colors.snow,
     borderStyle: 'none',
     borderRadius: 8,
     padding: '8px 12px',

@@ -28,6 +28,14 @@ const config: StorybookConfig = {
       dev: config.mode === 'development',
       // Required for CSS variable support
       appendTo: 'head',
+      unstable_moduleResolution:
+      {
+        // The module system to be used.
+        // Use this value when using `ESModules`.
+        type: 'commonJS',
+        // The absolute path to the root directory of your project.
+        rootDir: __dirname,
+      }
     }));
 
     return config;
