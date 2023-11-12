@@ -2,8 +2,6 @@
 
 import stylex from '@stylexjs/stylex';
 import { colors } from '../../tokens/colors.stylex';
-import { StyleXClassName } from '@stylexjs/stylex/lib/StyleXTypes';
-
 
 const styles = stylex.create({
     wrapper: {
