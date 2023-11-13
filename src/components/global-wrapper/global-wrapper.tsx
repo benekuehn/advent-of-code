@@ -2,14 +2,17 @@
 
 import { Logo } from "@/duke/stories/logo";
 import { ReactNode } from "react"
-import { create } from '@stylexjs/stylex';
+import { create, props } from '@stylexjs/stylex';
 import { Navigation } from "../navigation";
 
 const styles = create({
-    logo: {
-        position: "absolute",
+    wrapper: {
+        position: "relative",
+        display: "flex",
+        gap: "64px",
         top: "80px",
-        left: "80px",
+        maxWidth: "1280px",
+        margin: "0 auto",
     },
 });
 
@@ -17,10 +20,14 @@ const styles = create({
 export const GlobalWrapper = ({ children }: { children: ReactNode }) => {
     return (
         <>
-            <div>
-                <Logo style={styles.logo} />
-                <Navigation />
-                {children}
+            <div {...props(styles.wrapper)}>
+                <div>
+                    <Logo />
+                    <Navigation />
+                </div>
+                <div>
+                    {children}
+                </div>
             </div>
         </>
 
