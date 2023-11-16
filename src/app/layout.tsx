@@ -1,7 +1,7 @@
 import { GeistSans } from 'geist/font/sans'
 import { ReactNode } from 'react'
 
-import { GlobalWrapper } from '@/components/pages/global-wrapper';
+import { GlobalWrapper } from '@/components/global-wrapper';
 import './global.css';
 
 export const metadata = {

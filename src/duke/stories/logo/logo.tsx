@@ -16,7 +16,7 @@ const styles = stylex.create({
     },
 });
 
-export const Logo = ({ style }: { style: Readonly<{}> }) => {
+export const Logo = ({ style }: { style?: Readonly<{}> }) => {
     return (
         <div className={stylex(styles.wrapper, style)}>
             <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
