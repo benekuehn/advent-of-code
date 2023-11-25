@@ -14,6 +14,11 @@ const styles = create({
         maxWidth: "1280px",
         margin: "0 auto",
     },
+    wrapperContent: {
+        display: "flex",
+        flexDirection: "column",
+        marginTop: "80px",
+    },
 });
 
 
@@ -25,7 +30,7 @@ export const GlobalWrapper = ({ children }: { children: ReactNode }) => {
                     <Logo />
                     <Navigation />
                 </div>
-                <div>
+                <div {...props(styles.wrapperContent)}>
                     {children}
                 </div>
             </div>
