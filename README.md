@@ -1,5 +1,5 @@
 # Advent of Code
-This is my advent of code repository. Starting this year, 2023, I plan to do as many advent of code challenges as possibile, while learning a bunch of new things doing it. But although I got the idea from doing this in the first place while thing about advent of code. My focus is really on figuring out the things below. Any solved advent of code challenge is just an excuse to start building in the first place.
+This is my Advent of Code website. Starting this year (2023), I plan to do as many Advent of Code challenges as possible while learning a bunch of new things. Although I got the idea from thinking about Advent of Code, any solved challenge is just an excuse to start building in the first place. My focus is really on figuring out the things below.
 
 ### The plan is to do at the following
 * Only use my terminal for anything git. No GUIs for this one. Even this README I am currently writing in nano, so excuse any typos.
