@@ -38,6 +38,7 @@ export const Navigation = () => {
             <div className={stylex(styles.divider)}><div>Advent of Code</div></div>
             <Link href={"/challenges/1-1"} className={stylex(styles.link)}><NavItem label="Day one-one" isActive={pathname == "/challenges/1-1"} /></Link>
             <Link href={"/challenges/1-2"} className={stylex(styles.link)}><NavItem label="Day one-two" isActive={pathname == "/challenges/1-2"} /></Link>
+            <Link href={"/challenges/2-1"} className={stylex(styles.link)}><NavItem label="Day two-one" isActive={pathname == "/challenges/2-1"} /></Link>
         </nav>
     )
 }
