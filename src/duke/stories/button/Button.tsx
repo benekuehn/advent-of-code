@@ -1,5 +1,5 @@
-import * as stylex from '@stylexjs/stylex';
-import { colors } from '../../tokens/colors.stylex';
+import * as stylex from "@stylexjs/stylex";
+import { colors } from "../../tokens/colors.stylex";
 
 const styles = stylex.create({
   base: {
@@ -7,9 +7,9 @@ const styles = stylex.create({
     lineHeight: 1.5,
     backgroundColor: colors.accentColor,
     // color: colors.primaryText,
-    borderStyle: 'none',
+    borderStyle: "none",
     borderRadius: 8,
-    padding: '8px 12px',
+    padding: "8px 12px",
   },
 });
 
@@ -25,7 +25,7 @@ interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: "small" | "medium" | "large";
   /**
    * Button contents
    */
@@ -39,16 +39,9 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export const Button = ({
-  label,
-  ...props
-}: ButtonProps) => {
+export const Button = ({ label, ...props }: ButtonProps) => {
   return (
-    <button
-      type="button"
-      {...stylex.props(styles.base)}
-      {...props}
-    >
+    <button type="button" {...stylex.props(styles.base)} {...props}>
       {label}
     </button>
   );
