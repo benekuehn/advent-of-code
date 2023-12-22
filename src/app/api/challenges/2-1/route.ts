@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   const body = await req.json();
   const { answer }: { answer: string } = body;
 
-  const allowance = {
+  const allowance: Record<string, number> = {
     red: 12,
     green: 13,
     blue: 14,
