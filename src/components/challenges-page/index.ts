@@ -1,1 +1,1 @@
-export { ChallengesPage } from './challenges-page';
+export { ChallengesPage } from "./challenges-page";

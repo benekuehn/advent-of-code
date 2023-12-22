@@ -22,21 +22,22 @@ const config: StorybookConfig = {
     config.module.rules = config.module.rules || [];
 
     config.plugins = config.plugins || [];
-    config.plugins.push(new StylexPlugin({
-      filename: 'styles.css',
-      // get webpack mode and set value for dev
-      dev: config.mode === 'development',
-      // Required for CSS variable support
-      appendTo: 'head',
-      unstable_moduleResolution:
-      {
-        // The module system to be used.
-        // Use this value when using `ESModules`.
-        type: 'commonJS',
-        // The absolute path to the root directory of your project.
-        rootDir: __dirname,
-      }
-    }));
+    config.plugins.push(
+      new StylexPlugin({
+        filename: "styles.css",
+        // get webpack mode and set value for dev
+        dev: config.mode === "development",
+        // Required for CSS variable support
+        appendTo: "head",
+        unstable_moduleResolution: {
+          // The module system to be used.
+          // Use this value when using `ESModules`.
+          type: "commonJS",
+          // The absolute path to the root directory of your project.
+          rootDir: __dirname,
+        },
+      }),
+    );
 
     return config;
   },

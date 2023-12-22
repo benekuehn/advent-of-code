@@ -1,1 +1,1 @@
-export { GlobalWrapper } from './global-wrapper';
+export { GlobalWrapper } from "./global-wrapper";
